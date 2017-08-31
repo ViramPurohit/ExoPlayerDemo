@@ -25,7 +25,7 @@ You can manage player visibility using simpleExoPlayerView.setControllerShowTime
 
 ### Playing Video
 
-We need to SimpleExoPlayerView for playing videos.
+We need to add SimpleExoPlayerView for playing videos.
 
 ```
         simpleExoPlayerView = (SimpleExoPlayerView) findViewById(R.id.player_view);
