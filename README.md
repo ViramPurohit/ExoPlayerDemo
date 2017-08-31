@@ -1,7 +1,5 @@
 # ExoPlayer Demo Project
 
-#### This repo updated for r2.5.1 version.
-
 You can play audio and video with ExoPlayer.
 
 
@@ -22,10 +20,9 @@ You can manage player visibility using simpleExoPlayerView.setControllerShowTime
 
 ```
 
-
 ### Playing Video
 
-We need to add SimpleExoPlayerView for playing videos.
+We need to add SimpleExoPlayerView for playing audio and videos.
 
 ```
         simpleExoPlayerView = (SimpleExoPlayerView) findViewById(R.id.player_view);
@@ -58,12 +55,20 @@ We need to add SimpleExoPlayerView for playing videos.
  For hls
 
 ```
+compile 'com.google.android.exoplayer:exoplayer-hls:r2.5.1'
+```
+
+```
 MediaSource mediaSource = new HlsMediaSource(Uri.parse("https://storage.googleapis.com/exoplayer-test-media-0/play.mp3"),
                 mediaDataSourceFactory, mainHandler, null);
 player.prepare(mediaSource);
 ```
 
 For dash
+
+```
+compile 'com.google.android.exoplayer:exoplayer-dash:r2.5.1'
+```
 
 ```
 MediaSource mediaSource = new DashMediaSource(uri, buildDataSourceFactory(false),
