@@ -17,6 +17,7 @@ You can play audio and video with ExoPlayer.
         player.prepare(mediaSource);
 ```
 
+```
 You can manage player visibility using simpleExoPlayerView.setControllerShowTimeoutMs(0);
 
 ```
@@ -40,7 +41,8 @@ We need to SimpleExoPlayerView for playing videos.
         simpleExoPlayerView.setPlayer(player);
 
         player.setPlayWhenReady(shouldAutoPlay);
-/*        MediaSource mediaSource = new HlsMediaSource(Uri.parse("https://storage.googleapis.com/exoplayer-test-media-0/play.mp3"),
+
+/* MediaSource mediaSource = new HlsMediaSource(Uri.parse("https://storage.googleapis.com/exoplayer-test-media-0/play.mp3"),
                 mediaDataSourceFactory, mainHandler, null);*/
 
         DefaultExtractorsFactory extractorsFactory = new DefaultExtractorsFactory();
