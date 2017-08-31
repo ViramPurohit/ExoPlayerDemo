@@ -72,15 +72,15 @@ player.prepare(mediaSource);
 If you use mp4, flv, mkv or other formats, you need to use ExtractorMediaSource as a MediaSource. Also we are using the ExtractorMediaSource for playing audio formats.Supported formats; mkv, mp4, mp3, ogg, ac3, flv, wav, flac.
 
 ```
-*Audio*/
+###  Audio
             MediaSource mediaSource = new ExtractorMediaSource(
                     Uri.parse("https://storage.googleapis.com/exoplayer-test-media-0/play.mp3"),
                 mediaDataSourceFactory, extractorsFactory, null, null);
 
 
-        /*Video*/
-//        MediaSource mediaSource = new ExtractorMediaSource(Uri.parse("http://techslides.com/demos/sample-videos/small.mp4"),
-//                mediaDataSourceFactory, extractorsFactory, null, null);
+### Video
+       MediaSource mediaSource = new ExtractorMediaSource(Uri.parse("http://techslides.com/demos/sample-videos/small.mp4"),
+               mediaDataSourceFactory, extractorsFactory, null, null);
 ```
 
 Reference from : https://github.com/google/ExoPlayer
